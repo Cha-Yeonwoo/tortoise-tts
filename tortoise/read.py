@@ -16,7 +16,7 @@ if __name__ == '__main__':
     parser.add_argument('--voice', type=str, help='Selects the voice to use for generation. See options in voices/ directory (and add your own!) '
                                                  'Use the & character to join two voices together. Use a comma to perform inference on multiple voices.', default='pat')
     parser.add_argument('--output_path', type=str, help='Where to store outputs.', default='results/longform/')
-    parser.add_argument('--output_name', type=str, help='How to name the output file', default='combined.wav')
+    parser.add_argument('--output_name', type=str, help='How to name the output file', default='combined')
     parser.add_argument('--preset', type=str, help='Which voice preset to use.', default='standard')
     parser.add_argument('--regenerate', type=str, help='Comma-separated list of clip numbers to re-generate, or nothing.', default=None)
     parser.add_argument('--candidates', type=int, help='How many output candidates to produce per-voice. Only the first candidate is actually used in the final product, the others can be used manually.', default=1)
